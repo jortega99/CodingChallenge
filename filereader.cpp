@@ -34,21 +34,29 @@ int main(int argc, char** args){
                 CookieMap.insert(p);
                 
             }
-            cout << p.first << " " << p.second << endl;
+            //cout << p.first << " " << p.second << endl;
         }
     }
     for(auto const pair: CookieMap){
         cout << "{" << pair.first << ": " << pair.second << "}" << endl;
     }
 
-    // vector<string> vec;
-    // pair<string, int> max_value("",0);
-    // for(auto const pair: CookieMap){
-    //     if(pair.second > max_value.second){
-            
-    //     }
-    // }
-    // // unordered_map<string, int>::iterator currentEntry;
+    vector<string> vec;
+    vec.push_back("");
+    pair<string, int> max_value("",0);
+    for(auto const pair: CookieMap){
+        if(pair.second > max_value.second){
+            max_value.second = pair.second;
+        }
+    }
+
+    for(auto const pair: CookieMap){
+        if(pair.second == max_value.second){
+            // vec.push_back(pair.first);
+            cout << pair.first << endl;
+        }
+    }
+    // map<string, int>::iterator currentEntry;
     // for(currentEntry = CookieMap.begin(); currentEntry != CookieMap.end(); currentEntry++){
 
     // }
