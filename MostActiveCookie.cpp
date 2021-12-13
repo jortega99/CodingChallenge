@@ -29,6 +29,10 @@ int main(int argc, char** args){
         }
     }
 
+    if(CookieMap.empty()){
+        cout << "No active cookies on this date" << endl;
+    }
+
     pair<string,int> max_value("",0);
     for(auto const pair: CookieMap){
         if(pair.second > max_value.second){
