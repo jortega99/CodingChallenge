@@ -1,5 +1,5 @@
 main:
 	g++ main.cpp MostActiveCookie.cpp -o most_active_cookie
 
-test:
+testing:
 	g++ test.cpp -o test
