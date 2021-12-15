@@ -41,3 +41,7 @@ void MostActiveCookie::printMostActiveCookie(int highestValue){
         }
     }
 }
+
+map<string,int> MostActiveCookie::getMap(){
+    return CookieMap;
+}
